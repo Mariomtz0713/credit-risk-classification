@@ -1,15 +1,15 @@
 # Report Analysis
 
-##Background
+## Background
 The purpose of this analysis was to to use various methods to train and evaluate a model based on loan borrower risk. 
 
-##Dataset
+## Dataset
 The lending data set consists of 77,536 data points and is split into training and testing sets. The X parameters were loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, and total debt. The Y parameter was the loan status.
 
-##Predictions
+## Predictions
 Both models would be fed the X parameters to predict if a borrower would be low-risk with value of 0 or high-risk with a value of 1.
 
-##Methods
+## Methods
 The first method used the original unaltered data through the Logistic Regression model. The second method altered data to eliminate data imbalance with Random Over Sample module that was then implemented into the Logistic Regression model.
 
 ## Results
