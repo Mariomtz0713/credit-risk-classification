@@ -1,31 +1,34 @@
-# Module 12 Report Template
+# Report Analysis
 
-## Overview of the Analysis
+##Background
+The purpose of this analysis was to to use various methods to train and evaluate a model based on loan borrower risk. 
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+##Dataset
+The lending data set consists of 77,536 data points and is split into training and testing sets. The X parameters were loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, and total debt. The Y parameter was the loan status.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+##Predictions
+Both models would be fed the X parameters to predict if a borrower would be low-risk with value of 0 or high-risk with a value of 1.
+
+##Methods
+The first method used the original unaltered data through the Logistic Regression model. The second method altered data to eliminate data imbalance with Random Over Sample module that was then implemented into the Logistic Regression model.
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+* Machine Learning Model 1: Original Data
+  * Precision: 
+    * 100% low-risk, 85% high-risk
+  * Recall:
+    * 99% low-risk,, 91% high-risk 
+  * Balanced Accuracy Score: 99%
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+* Machine Learning Model 2: Resampled Data
+  * Precision: 
+    * 100% low-risk, 84% high-risk
+  * Recall:
+    * 99% low-risk,, 99% high-risk 
+  * Balanced Accuracy Score: 99%
 
 ## Summary
+Both models were very similar with having a balanced accuracy score of 99% respectively. However, I would recommended machine learning model 2 because its high-risk recall precision is at 99% compared to model 1's 91%.
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+An 8% high-risk recall difference is a lot mroe noticable to a 1% loss in high-risk's precision as classifiing low-risk when in reality a borrower is high-risk has a bigger impact on the company.
