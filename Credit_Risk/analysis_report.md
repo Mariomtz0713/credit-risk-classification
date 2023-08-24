@@ -18,14 +18,14 @@ The first method used the original unaltered data through the Logistic Regressio
   * Precision: 
     * 100% low-risk, 85% high-risk
   * Recall:
-    * 99% low-risk,, 91% high-risk 
+    * 99% low-risk, 91% high-risk 
   * Balanced Accuracy Score: 99%
 
 * Machine Learning Model 2: Resampled Data
   * Precision: 
     * 100% low-risk, 84% high-risk
   * Recall:
-    * 99% low-risk,, 99% high-risk 
+    * 99% low-risk, 99% high-risk 
   * Balanced Accuracy Score: 99%
 
 ## Summary
